@@ -1,7 +1,6 @@
 const jwt = require("jsonwebtoken");
 const { jwtSecret } = require("../config");
 const { loginUser } = require("./auth.controller");
-const e = require("express");
 
 const login = (req, res) => {
   const { email, password } = req.body;
@@ -12,7 +11,7 @@ const login = (req, res) => {
           const token = jwt.sign(
             { id: user.id, email: user.email, role: user.role },
             jwtSecret,
-            { expiresIn: "1h" }
+            { expiresIn: "7d" }
           );
           res.status(200).json({ token });
         } else {
