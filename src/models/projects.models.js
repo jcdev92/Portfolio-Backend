@@ -1,15 +1,14 @@
 const database = require("../utils/database");
 const Users = require("./users.model");
 const { DataTypes } = require("sequelize");
-const uuid = require("uuid");
 
 const Projects = database.define(
   "Projects",
   {
     id: {
       type: DataTypes.UUID,
-      defaultValue: () => uuid.v4(),
       primaryKey: true,
+      defaultValue: DataTypes.UUIDV4,
     },
     title: {
       type: DataTypes.STRING,

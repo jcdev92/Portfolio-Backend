@@ -95,10 +95,66 @@ const deleteProject = (req, res) => {
     });
 };
 
+// add a skill to a project
+
+const addSkillToProject = (req, res) => {
+  const { projectId, skillId } = req.body;
+  if (projectId && skillId) {
+    projectsController
+      .addSkillToProject({ projectId, skillId })
+      .then((data) => {
+        res.status(201).json({
+          message: `skill ${skillId} added to the project ${projectId} !!`,
+          data,
+        });
+      })
+      .catch((err) => {
+        res.status(400).json({ message: err.message });
+      });
+  } else {
+    res.status(400).json({
+      message: "Missing required information",
+      fields: {
+        projectId: "uuid",
+        skillId: "uuid",
+      },
+    });
+  }
+};
+
+// remove a skill from a project
+
+const removeSkillFromProject = (req, res) => {
+  const { projectId, skillId } = req.body;
+  if (projectId && skillId) {
+    projectsController
+      .removeSkillFromProject({ projectId, skillId })
+      .then((data) => {
+        res.status(201).json({
+          message: `skill ${skillId} removed from the project ${projectId} !!`,
+          data,
+        });
+      })
+      .catch((err) => {
+        res.status(400).json({ message: err.message });
+      });
+  } else {
+    res.status(400).json({
+      message: "Missing required information",
+      fields: {
+        projectId: "uuid",
+        skillId: "uuid",
+      },
+    });
+  }
+};
+
 module.exports = {
   createProject,
   getProjectById,
   getAllProjects,
   updateProject,
   deleteProject,
+  addSkillToProject,
+  removeSkillFromProject,
 };
