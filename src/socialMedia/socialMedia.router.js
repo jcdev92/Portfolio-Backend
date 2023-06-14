@@ -22,7 +22,7 @@ router
 router
   .route("/:id")
   .get(getSocialMediaById)
-  .put(
+  .patch(
     passport.authenticate("jwt", { session: false }),
     adminValidate,
     updateSocialMedia
