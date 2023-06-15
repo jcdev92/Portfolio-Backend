@@ -1,5 +1,5 @@
 const database = require("../utils/database");
-const Users = require("./users.model");
+const Users = require("./users.models");
 const { DataTypes } = require("sequelize");
 
 const Projects = database.define(

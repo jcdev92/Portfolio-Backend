@@ -1,4 +1,4 @@
-const Users = require("../models/users.model");
+const Users = require("../models/users.models");
 const Skills = require("../models/skills.models");
 const SocialMedia = require("../models/socialMedia.models");
 const uuid = require("uuid");

@@ -8,6 +8,8 @@ const authRouter = require("./auth/auth.router");
 const skillRouter = require("./skills/skills.router");
 const socialMediaRouter = require("./socialMedia/socialMedia.router");
 const projectRouter = require("./projects/projects.router");
+const categoryRouter = require("./categories/categories.router");
+const postRouter = require("./posts/posts.router");
 const database = require("./utils/database");
 
 app.use(express.json());
@@ -17,6 +19,8 @@ app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/skill", skillRouter);
 app.use("/api/v1/social-media", socialMediaRouter);
 app.use("/api/v1/project", projectRouter);
+app.use("/api/v1/category", categoryRouter);
+app.use("/api/v1/post", postRouter);
 
 database
   .authenticate()

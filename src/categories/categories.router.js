@@ -1,36 +1,36 @@
 const router = require("express").Router();
 const {
-  createSkill,
-  getSkillById,
-  getAllSkills,
-  updateSkill,
-  deleteSkill,
-} = require("./skills.services");
+  getAllCategories,
+  getCategoryById,
+  createCategory,
+  updateCategory,
+  deleteCategory,
+} = require("./categories.services");
 const passport = require("passport");
 const adminValidate = require("../middlewares/role.middleware");
 require("../middlewares/auth.middleware")(passport);
 
 router
   .route("/")
-  .get(passport.authenticate("jwt", { session: false }), getAllSkills)
+  .get(passport.authenticate("jwt", { session: false }), getAllCategories)
   .post(
     passport.authenticate("jwt", { session: false }),
     adminValidate,
-    createSkill
+    createCategory
   );
 
 router
   .route("/:id")
-  .get(passport.authenticate("jwt", { session: false }), getSkillById)
+  .get(passport.authenticate("jwt", { session: false }), getCategoryById)
   .put(
     passport.authenticate("jwt", { session: false }),
     adminValidate,
-    updateSkill
+    updateCategory
   )
   .delete(
     passport.authenticate("jwt", { session: false }),
     adminValidate,
-    deleteSkill
+    deleteCategory
   );
 
 module.exports = router;

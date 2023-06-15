@@ -1,11 +1,9 @@
 const Skills = require("../models/skills.models");
-const uuid = require("uuid");
 
 // creating the skill
 const createSkill = async (data) => {
   const { title, icon, userId } = data;
   const newSkill = await Skills.create({
-    id: uuid.v4(),
     title,
     icon,
     userId,

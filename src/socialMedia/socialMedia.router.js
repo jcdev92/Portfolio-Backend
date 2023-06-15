@@ -12,7 +12,7 @@ require("../middlewares/auth.middleware")(passport);
 
 router
   .route("/")
-  .get(getAllSocialMedia)
+  .get(passport.authenticate("jwt", { session: false }), getAllSocialMedia)
   .post(
     passport.authenticate("jwt", { session: false }),
     adminValidate,
@@ -21,7 +21,7 @@ router
 
 router
   .route("/:id")
-  .get(getSocialMediaById)
+  .get(passport.authenticate("jwt", { session: false }), getSocialMediaById)
   .patch(
     passport.authenticate("jwt", { session: false }),
     adminValidate,

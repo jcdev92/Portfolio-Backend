@@ -23,7 +23,7 @@ router
 // routes by id
 router
   .route("/:id")
-  .get(userServices.getUser)
+  .get(passport.authenticate("jwt", { session: false }), userServices.getUser)
   .patch(
     passport.authenticate("jwt", { session: false }),
     adminValidate,

@@ -8,7 +8,7 @@ const createSkill = (req, res) => {
     skillsControllers
       .createSkill({ title, icon, userId })
       .then((data) => {
-        res.status(201).json({ message: "Skill created!", data });
+        res.status(201).json({ message: `Skill created`, data });
       })
       .catch((err) => {
         res.status(400).json({ message: err.message });
@@ -30,7 +30,7 @@ const getSkillById = (req, res) => {
       if (data) {
         res.status(200).json(data);
       } else {
-        res.status(404).json({ message: "Skill not found" });
+        res.status(404).json({ message: `Skill ${id} not found` });
       }
     })
     .catch((err) => {

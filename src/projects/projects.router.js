@@ -14,7 +14,7 @@ require("../middlewares/auth.middleware")(passport);
 
 router
   .route("/")
-  .get(getAllProjects)
+  .get(passport.authenticate("jwt", { session: false }), getAllProjects)
   .post(
     passport.authenticate("jwt", { session: false }),
     adminValidate,
@@ -23,7 +23,7 @@ router
 
 router
   .route("/:id")
-  .get(getProjectById)
+  .get(passport.authenticate("jwt", { session: false }), getProjectById)
   .patch(
     passport.authenticate("jwt", { session: false }),
     adminValidate,
