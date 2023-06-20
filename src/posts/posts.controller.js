@@ -4,6 +4,7 @@ const Category = require("../models/categories.models");
 
 const getAllPosts = async () =>
   await Post.findAll({
+    attributes: ["id", "title", "brief", "content", "image", "createdAt"],
     include: [
       {
         model: User,
@@ -18,6 +19,7 @@ const getAllPosts = async () =>
 
 const getPostById = async (id) =>
   await Post.findOne(id, {
+    attributes: ["id", "title", "brief", "content", "image", "createdAt"],
     include: [
       {
         model: User,

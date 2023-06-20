@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const initModels = require("./models/initModels.models");
 
@@ -12,6 +13,7 @@ const categoryRouter = require("./categories/categories.router");
 const postRouter = require("./posts/posts.router");
 const database = require("./utils/database");
 
+app.use(cors());
 app.use(express.json());
 
 app.use("/api/v1/user", userRouter);
