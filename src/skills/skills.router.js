@@ -22,7 +22,7 @@ router
 router
   .route("/:id")
   .get(passport.authenticate("jwt", { session: false }), getSkillById)
-  .put(
+  .patch(
     passport.authenticate("jwt", { session: false }),
     adminValidate,
     updateSkill
