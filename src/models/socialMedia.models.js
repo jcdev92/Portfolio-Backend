@@ -13,14 +13,17 @@ const SocialMedia = database.define(
     title: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true,
     },
     icon: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true,
     },
     url: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true,
     },
     userId: {
       type: DataTypes.UUID,

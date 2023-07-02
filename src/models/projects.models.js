@@ -13,6 +13,7 @@ const Projects = database.define(
     title: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true,
     },
     description: {
       type: DataTypes.STRING,
@@ -25,10 +26,12 @@ const Projects = database.define(
     url: {
       type: DataTypes.STRING,
       allowNull: true,
+      unique: true,
     },
     github: {
       type: DataTypes.STRING,
       allowNull: true,
+      unique: true,
     },
     userId: {
       type: DataTypes.UUID,

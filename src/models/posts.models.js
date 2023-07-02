@@ -14,10 +14,12 @@ const Post = database.define(
     title: {
       type: DataTypes.STRING(100),
       allowNull: false,
+      unique: true,
     },
     brief: {
       type: DataTypes.STRING(300),
       allowNull: false,
+      unique: true
     },
     content: {
       type: DataTypes.TEXT,
