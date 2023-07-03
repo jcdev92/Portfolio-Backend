@@ -1,6 +1,6 @@
-const Post = require("../models/posts.models");
-const User = require("../models/users.models");
-const Category = require("../models/categories.models");
+const Post = require("../db/models/posts.models");
+const User = require("../db/models/users.models");
+const Category = require("../db/models/categories.models");
 
 const getAllPosts = async () =>
   await Post.findAll({

@@ -1,6 +1,6 @@
-const Projects = require("../models/projects.models");
-const ProjectsSkills = require("../models/projects_skills.models");
-const Skills = require("../models/skills.models");
+const Projects = require("../db/models/projects.models");
+const ProjectsSkills = require("../db/models/projects_skills.models");
+const Skills = require("../db/models/skills.models");
 
 // create a project
 const createProject = async (data) => {

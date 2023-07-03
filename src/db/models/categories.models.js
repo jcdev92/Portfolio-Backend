@@ -1,9 +1,9 @@
-const database = require("../utils/database");
+const database = require("../../utils/database");
 const { DataTypes } = require("sequelize");
-const Users = require("./users.models");
+const User = require("./users.models");
 
-const SocialMedia = database.define(
-  "SocialMedia",
+const Category = database.define(
+  "Category",
   {
     id: {
       type: DataTypes.UUID,
@@ -15,30 +15,20 @@ const SocialMedia = database.define(
       allowNull: false,
       unique: true,
     },
-    icon: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-    },
-    url: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-    },
     userId: {
       type: DataTypes.UUID,
       allowNull: false,
       field: "user_id",
       references: {
-        model: Users,
+        model: User,
         key: "id",
       },
     },
   },
   {
-    tableName: "social_media",
     timestamps: false,
+    tableName: "categories",
   }
 );
 
-module.exports = SocialMedia;
+module.exports = Category;

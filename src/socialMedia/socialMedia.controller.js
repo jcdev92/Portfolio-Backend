@@ -1,4 +1,4 @@
-const SocialMedia = require("../models/socialMedia.models");
+const SocialMedia = require("../db/models/socialMedia.models");
 const uuid = require("uuid");
 
 // creating the social media

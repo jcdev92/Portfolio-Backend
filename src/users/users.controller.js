@@ -1,6 +1,6 @@
-const Users = require("../models/users.models");
-const Skills = require("../models/skills.models");
-const SocialMedia = require("../models/socialMedia.models");
+const Users = require("../db/models/users.models");
+const Skills = require("../db/models/skills.models");
+const SocialMedia = require("../db/models/socialMedia.models");
 const uuid = require("uuid");
 const { hashPassword } = require("../utils/crypto");
 

@@ -1,6 +1,6 @@
 const Skills = require("./skills.models");
 const Projects = require("./projects.models");
-const db = require("../utils/database");
+const db = require("../../utils/database");
 const { DataTypes } = require("sequelize");
 
 const ProjectsSkills = db.define(

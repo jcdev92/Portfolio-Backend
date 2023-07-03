@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const initModels = require("./models/initModels.models");
+const initModels = require("./db/models/initModels.models");
 
 const { port } = require("./config");
 const userRouter = require("./users/users.router");
