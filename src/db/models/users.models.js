@@ -68,6 +68,17 @@ const Users = database.define(
       defaultValue:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam molestias, reiciendis corrupti pariatur harum natus et ex atque quidem quod quaerat nesciunt expedita ullam nulla dignissimos assumenda modi mollitia iste?",
     },
+    biography: {
+      type: DataTypes.TEXT,
+      allowNull: true,
+      unique: true,
+    },
+    bioImage: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      unique: true,
+      field: "bio_image",
+    },
     role: {
       type: DataTypes.STRING,
       defaultValue: "admin",

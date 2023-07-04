@@ -1,14 +1,32 @@
+const e = require("cors");
 const Skills = require("../db/models/skills.models");
 
 // creating the skill
 const createSkill = async (data) => {
   const { title, icon, userId } = data;
-  const newSkill = await Skills.create({
-    title,
-    icon,
-    userId,
+
+  // if title or icon exists then throw error
+  const titleExist = await Skills.findOne({
+    where: {
+      title,
+    },
   });
-  return newSkill;
+  const iconExist = await Skills.findOne({
+    where: {
+      icon,
+    },
+  });
+
+  if (titleExist || iconExist) {
+    throw new Error("Skill already exists");
+  } else {
+    const newSkill = await Skills.create({
+      title,
+      icon,
+      userId,
+    });
+    return newSkill;
+  }
 };
 
 // getting the only one skill
