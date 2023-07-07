@@ -59,7 +59,10 @@ const updateSkill = (req, res) => {
     .updateSkill(id, { title, icon })
     .then((data) => {
       if (data[0]) {
-        res.status(200).json({ message: `Skill ${id} updated successfully` });
+        res.status(200).json({
+          message: `Skill ${id} updated successfully`,
+          data: { id, title, icon },
+        });
       } else {
         res.status(404).json({ message: `Skill ${id} not found` });
       }
@@ -77,7 +80,9 @@ const deleteSkill = (req, res) => {
     .deleteSkill(id)
     .then((data) => {
       if (data) {
-        res.status(200).json({ message: `Skill ${id} deleted successfully` });
+        res
+          .status(200)
+          .json({ message: `Skill ${id} deleted successfully`, id });
       } else {
         res.status(404).json({ message: `Skill ${id} not found` });
       }
