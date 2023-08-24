@@ -71,9 +71,21 @@ const deleteProject = async (id) => await Projects.destroy({ where: { id } });
 // add a skill to a project
 const addSkillToProject = async (data) => {
   const { projectId, skillId } = data;
-  const newSkill = await ProjectsSkills.create({ projectId, skillId });
-  return newSkill;
-};
+
+  // check if the skill is already added to the project or not
+  const checkSkill = await ProjectsSkills.findOne({
+    where: { projectId, skillId },
+  });
+  
+  // if the skill is not added to the project, add the skill to the project
+  if (!checkSkill) {
+    const newSkill = await ProjectsSkills.create({ projectId, skillId });
+    return newSkill;
+  };
+
+  // if the skill is already added to the project, throw an error
+   throw new Error("Skill is already added to the project"); 
+}
 
 // remove a skill from a project
 const removeSkillFromProject = async (data) => {
