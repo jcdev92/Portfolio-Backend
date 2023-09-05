@@ -22,7 +22,7 @@ npm i express sequelize pg pg-hstore bcrypt jsonwebtoken dotenv
 devDependencies:
 
 \`\`\`
-npm i -D nodemon
+npm i -D nodemon sequelize-cli
 \`\`\`
 
 I use [Postman](https://www.postman.com/) to test my API endpoints.
