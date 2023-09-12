@@ -11,7 +11,7 @@ const login = (req, res) => {
           const token = jwt.sign(
             { id: user.id, email: user.email, role: user.role },
             jwtSecret,
-            { expiresIn: "5h" }
+            { expiresIn: "10s" }
           );
           res.status(200).json({ token });
         } else {
