@@ -1,4 +1,3 @@
-const e = require("cors");
 const Skills = require("../db/models/skills.models");
 
 // creating the skill
@@ -8,7 +7,7 @@ const createSkill = async (data) => {
   // if title or icon exists then throw error
   const titleExist = await Skills.findOne({
     where: {
-      titlez,
+      title,
     },
   });
   const iconExist = await Skills.findOne({
