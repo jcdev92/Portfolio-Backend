@@ -4,38 +4,13 @@ const uuid = require("uuid");
 // creating the social media
 const createSocialMedia = async (data) => {
   const { title, icon, url, userId } = data;
-
-
-  const titleExist = await SocialMedia.findOne({
-    where: {
-      title: title.toLowerCase(),
-    },
+  const newSocialMedia = await SocialMedia.create({
+    id: uuid.v4(),
+    title,
+    icon,
+    url,
+    userId,
   });
-
-  const iconExist = await SocialMedia.findOne({
-    where: {
-      icon: icon.toLowerCase(),
-    },
-  });
-
-  const urlExist = await SocialMedia.findOne({
-    where: {
-      url: url.toLowerCase(),
-    },
-  });
-
-  if (titleExist || iconExist || urlExist) {
-    throw new Error("Social media already exists");
-  } else {
-    const newSocialMedia = await SocialMedia.create({
-      id: uuid.v4(),
-      title,
-      icon,
-      url,
-      userId,
-    });
-  }
-
   return newSocialMedia;
 };
 
