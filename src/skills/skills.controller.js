@@ -6,14 +6,10 @@ const createSkill = async (data) => {
 
   // if title or icon exists then throw error
   const titleExist = await Skills.findOne({
-    where: {
-      title,
-    },
+    where: sequelize.where(sequelize.fn('LOWER', sequelize.col('title')), title.toLowerCase())
   });
   const iconExist = await Skills.findOne({
-    where: {
-      icon,
-    },
+    where: sequelize.where(sequelize.fn('LOWER', sequelize.col('icon')), icon.toLowerCase())
   });
 
   if (titleExist || iconExist) {
