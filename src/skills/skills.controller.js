@@ -1,4 +1,3 @@
-const { Op } = require("sequelize");
 const Skills = require("../db/models/skills.models");
 
 // creating the skill
@@ -8,16 +7,12 @@ const createSkill = async (data) => {
   // if title or icon exists then throw error
   const titleExist = await Skills.findOne({
     where: {
-      title: {
-        [Op.like]: [title.toLowerCase()]   
-      }
+      title,
     },
   });
   const iconExist = await Skills.findOne({
     where: {
-      icon: {
-        [Op.like]: [icon.toLowerCase()]   
-      }
+      icon,
     },
   });
 

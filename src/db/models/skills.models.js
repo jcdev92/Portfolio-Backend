@@ -33,6 +33,7 @@ const Skills = database.define(
   {
     tableName: "skills",
     timestamps: false,
+    collate: "utf8_bin",
   }
 );
 
