@@ -3,6 +3,8 @@ const Skills = require("../db/models/skills.models");
 const SocialMedia = require("../db/models/socialMedia.models");
 const uuid = require("uuid");
 const { hashPassword } = require("../utils/crypto");
+const Projects = require("../db/models/projects.models");
+const ProjectsSkills = require("../db/models/projects_skills.models");
 
 // creating the user
 const createUser = async (data) => {
@@ -72,7 +74,31 @@ const getAllUsers = async () =>
       {
         model: SocialMedia,
         attributes: ["id", "title", "icon", "url"],
-      },
+      },{
+        model: Projects,
+        attributes: [
+          "id",
+          "title",
+          "description",
+          "image",
+          "url",
+          "github",
+        ],
+        include: {
+          model: ProjectsSkills,
+          attributes: [
+            "id"
+          ],
+          include: {
+            model: Skills,
+            attributes: [
+              "id",
+              "title",
+              "icon",
+            ],
+          }
+        }
+      }
     ],
   });
 
