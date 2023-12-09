@@ -14,7 +14,7 @@ const postRouter = require("./posts/posts.router");
 const database = require("./utils/database");
 
 // Configuración de CORS
-const allowedOrigins = ["https://jcdev-portfolio-frontend.vercel.app", "http://localhost:5173", "https://portfolio-frontend-ew7zpp526-jcdev92.vercel.app"];
+const allowedOrigins = ["https://jcdev-portfolio-frontend.vercel.app/", "http://localhost:5173", "https://portfolio-frontend-kw0bsj9j9-jcdev92.vercel.app/"];
 const corsOptions = {
   origin: (origin, callback) => {
     if (allowedOrigins.includes(origin) || !origin) {
