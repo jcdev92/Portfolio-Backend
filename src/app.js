@@ -25,7 +25,7 @@ const corsOptions = {
   },
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
-  exposedHeaders: ["Authorization"], // Si es necesario
+  // exposedHeaders: ["Authorization"], // Si es necesario
 };
 
 app.use(cors(corsOptions));
