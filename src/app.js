@@ -14,7 +14,7 @@ const postRouter = require("./posts/posts.router");
 const database = require("./utils/database");
 
 // Configuración de CORS
-const allowedOrigins = ["http://localhost:5173", "https://portfolio-frontend-git-main-jcdev92s-projects.vercel.app", "https://portfolio-frontend-g1i4zfz1p-jcdev92s-projects.vercel.app/", "https://portfolio-backend-dev-zgzm.2.us-1.fl0.io/api/v1/user"];
+const allowedOrigins = ["http://localhost:5173", "https://portfolio-frontend-git-main-jcdev92s-projects.vercel.app", "https://portfolio-frontend-g1i4zfz1p-jcdev92s-projects.vercel.app", "https://portfolio-backend-dev-zgzm.2.us-1.fl0.io/api/v1/user"];
 const corsOptions = {
   origin: (origin, callback) => {
     if (allowedOrigins.includes(origin) || !origin) {
@@ -25,8 +25,14 @@ const corsOptions = {
   },
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
-  // exposedHeaders: ["Authorization"], // Si es necesario
+  exposedHeaders: ["Authorization"], // Si es necesario
 };
+
+app.use((req, res, next) => {
+  console.log('Request received');
+  next();
+});
+
 
 app.use(cors(corsOptions));
 
