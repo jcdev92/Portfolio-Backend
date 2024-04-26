@@ -39,7 +39,7 @@ database
 app.get("/", (req, res) => {
   res.status(200).json({
     message: "Hello World",
-    getProfile: `http://${url}/api/v1/user`,
+    getProfile: `${url}/api/v1/user`,
   });
 });
 
