@@ -3,7 +3,7 @@ const cors = require("cors");
 const app = express();
 const initModels = require("./db/models/initModels.models");
 
-const { port } = require("./config");
+const { url } = require("./config");
 const userRouter = require("./users/users.router");
 const authRouter = require("./auth/auth.router");
 const skillRouter = require("./skills/skills.router");
@@ -13,32 +13,7 @@ const categoryRouter = require("./categories/categories.router");
 const postRouter = require("./posts/posts.router");
 const database = require("./utils/database");
 
-// Configuración de CORS
-// const allowedOrigins = ["http://localhost:5173", "https://portfolio-frontend-git-main-jcdev92s-projects.vercel.app", "https://portfolio-frontend-g1i4zfz1p-jcdev92s-projects.vercel.app", "https://portfolio-backend-dev-zgzm.2.us-1.fl0.io/api/v1/user"];
-// const corsOptions = {
-//   origin: (origin, callback) => {
-//     if (allowedOrigins.includes(origin) || !origin) {
-//       callback(null, true);
-//     } else {
-//       callback(new Error("Origin not allowed by CORS"));
-//     }
-//   },
-//   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-//   credentials: true,
-//   exposedHeaders: ["Authorization"], // Si es necesario
-// };
-
-// app.use((req, res, next) => {
-//   console.log('Request received');
-//   next();
-// });
-
-
-// app.use(cors(corsOptions));
-
-// cors dev23
 app.use(cors())
-
 
 app.use(express.json());
 
@@ -63,10 +38,10 @@ database
 app.get("/", (req, res) => {
   res.status(200).json({
     message: "Hello World",
-    user: `http://localhost:${port}/api/v1/user`,
+    getProfile: `http://${url}/api/v1/user`,
   });
 });
 
 initModels();
 
-app.listen(port, () => console.log(`Server running on port ${port}`));
+app.listen(port, () => console.log(`Server running on port ${url}`));

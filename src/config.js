@@ -1,6 +1,7 @@
 require("dotenv").config();
 
 const config = {
+  url: process.env.URL,
   port: process.env.PORT || 9000,
   nodeEnv: process.env.NODE_ENV !== "development",
   jwtSecret: process.env.JWT_SECRET,
