@@ -4,6 +4,7 @@ const app = express();
 const initModels = require("./db/models/initModels.models");
 
 const { url } = require("./config");
+const { port } = require("./config");
 const userRouter = require("./users/users.router");
 const authRouter = require("./auth/auth.router");
 const skillRouter = require("./skills/skills.router");
@@ -44,4 +45,4 @@ app.get("/", (req, res) => {
 
 initModels();
 
-app.listen(port, () => console.log(`Server running on port ${url}`));
+app.listen(port, () => console.log(`Server running on port ${port}`));
