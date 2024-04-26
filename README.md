@@ -2,7 +2,7 @@
 
 ## Description
 
-This is the backend for my portfolio website. It is a RESTful API built with Node.js, Express, PostgresSQL and Sequelize. JWT authentication. It is hosted on [not yet].
+This is the backend for my portfolio website. It is a RESTful API built with Node.js, Express, PostgresSQL and Sequelize. JWT authentication. It is hosted on [Link](https://portfolio-backend-j1tl.onrender.com/).
 
 ## Table of Contents
 
@@ -15,15 +15,7 @@ This is the backend for my portfolio website. It is a RESTful API built with Nod
 
 To install the dependencies, run the following command:
 
-\`\`\`
-npm i express sequelize pg pg-hstore bcrypt jsonwebtoken dotenv
-\`\`\`
-
-devDependencies:
-
-\`\`\`
-npm i -D nodemon sequelize-cli
-\`\`\`
+``` npm i ```
 
 I use [Postman](https://www.postman.com/) to test my API endpoints.
 
@@ -31,11 +23,7 @@ I use [Postman](https://www.postman.com/) to test my API endpoints.
 
 To start the server, run the following command:
 
-\`\`\`
-npm start
-\`\`\`
-npm run dev
-\`\`\`
+``` npm run dev ```
 
 
 ## License
@@ -52,10 +40,10 @@ If you have any questions, please contact me at the following:
 
 Email: jcdeveloper92@gmail.com
 
-GitHub: [jcdev92](
+GitHub: [jcdev92](https://github.com/jcdev92)
 
 ## Links
 
-[GitHub Repository](
-[Deployed Application](
-`;
+[GitHub Repository](https://github.com/jcdev92/Portfolio-Backend)
+
+[Deployed Application](https://portfolio-backend-j1tl.onrender.com)
