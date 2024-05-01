@@ -1,4 +1,3 @@
-const { updateUser } = require("./users.controller");
 const usersController = require("./users.controller");
 
 // getting all users

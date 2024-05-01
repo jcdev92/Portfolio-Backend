@@ -12,9 +12,10 @@ const socialMediaRouter = require("./socialMedia/socialMedia.router");
 const projectRouter = require("./projects/projects.router");
 const categoryRouter = require("./categories/categories.router");
 const postRouter = require("./posts/posts.router");
+const seedRouter = require("./seeds/seeds.router");
 const database = require("./utils/database");
 
-app.use(cors())
+app.use(cors());
 
 app.use(express.json());
 
@@ -25,6 +26,7 @@ app.use("/api/v1/social-media", socialMediaRouter);
 app.use("/api/v1/project", projectRouter);
 app.use("/api/v1/category", categoryRouter);
 app.use("/api/v1/post", postRouter);
+app.use("/api/v1/seed", seedRouter);
 
 database
   .authenticate()
@@ -38,7 +40,7 @@ database
 
 app.get("/", (req, res) => {
   res.status(200).json({
-    message: "Hello World",
+    message: "Welcome to my portfolio API",
     getProfile: `${url}/api/v1/user`,
   });
 });
