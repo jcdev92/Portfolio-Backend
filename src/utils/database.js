@@ -9,13 +9,13 @@ const database = new Sequelize({
   password: dbPass,
   database: dbName,
   port: Number(dbPort),
-  // dialectOptions: {
-  //   ssl: {
-  //     "require": true,
-  //     "rejectUnauthorized": false 
-  //   },
-  //   native:true
-  // }
+  dialectOptions: {
+    ssl: {
+      "require": true,
+      "rejectUnauthorized": false 
+    },
+    native:true
+  }
 });
 
 module.exports = database;
