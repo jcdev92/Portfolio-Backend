@@ -1,4 +1,4 @@
-const { seedDatabase } = require("./seeds.controller");
+const { seedDatabase, seedRelateProjectSkills } = require("./seeds.controller");
 
 const seed = (req, res) => {
     seedDatabase()

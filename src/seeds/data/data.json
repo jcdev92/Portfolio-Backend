@@ -1,235 +1,289 @@
-[
-    {
-        "firstName": "Jesus Maria",
-        "lastName": "Clemente Garcia",
-        "email": "jcdeveloper92@gmail.com",
-        "phone": "+584120799500",
-        "birthDay": "1992-06-16T00:00:00.000Z",
-        "gender": "male",
-        "country": "Venezuela",
-        "profileImg": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687545529/JC%20DEV/profile/frontal_cortada_kldz0g.webp",
-        "jobTitle": "Full Stack Developer",
-        "aboutMe": "I'm  a Full Stack Web Developer with passion for creating beautiful and functional websites and apps. I have a background in Bussines Management at the University of Carabobo and Full Stack Web Development at Academlo.com. I'm currently looking for a backend or frontend developer job.",
-        "biography": "My interest in computers began when I was around 15 years old, when I taught myself how to repair computers. Then years later I studied business administration at university, with the dream of creating my own IT company. However, it was only after different jobs, years later, that I discovered the fascinating world of code on the Internet.  To have a solid foundation, I studied the fundamentals of programming at Platzi Academy. Next, I enrolled in Academlo, an invaluable opportunity to learn more about web development. At Academlo, I developed applications with JavaScript-HTML CSS, REACT & NODE JS, such as an online store, Poke-App, CRUD users App, and several dynamic websites. Now, I want to use my skills to help others achieve their aspirations.",
-        "bioImage": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687545518/JC%20DEV/profile/perfil_frontal_orig-removebg-preview_oxasfp.png",
-        "role": "admin",
-        "Skills": [
-            {
-                "title": "Tailwind CSS",
-                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687717714/JC%20DEV/icons/TAILWIND_eix6j4.webp"
-            },
-            {
-                "title": "Express JS",
-                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687717401/JC%20DEV/icons/icons8-express-js_fagkcg.webp"
-            },
-            {
-                "title": "JavaScript",
-                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547037/JC%20DEV/icons/javascript_pqswtn.svg"
-            },
-            {
-                "title": "HTML5",
-                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692936206/JC%20DEV/icons/icons8-html_tuqyba.webp"
-            },
-            {
-                "title": "CSS",
-                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692936206/JC%20DEV/icons/icons8-css_q4xxed.webp"
-            },
-            {
-                "title": "React JS",
-                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547034/JC%20DEV/icons/react_x2zum8.svg"
-            },
-            {
-                "title": "Python",
-                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547034/JC%20DEV/icons/python_wlee9b.svg"
-            },
-            {
-                "title": "PostgreSQL",
-                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1688328791/JC%20DEV/icons/postgresql_logo_icon_170835_dqszmu.webp"
-            },
-            {
-                "title": "Sequelize",
-                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1688327803/JC%20DEV/icons/sequelize_original_logo_icon_146348_ijbt8k.webp"
-            },
-            {
-                "title": "Node JS",
-                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687659259/JC%20DEV/icons/icons8-node-js-48_e3cyck.png"
-            }
-        ],
-        "SocialMedia": [
-            {
-                "title": "LinkedIn",
-                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692936232/JC%20DEV/icons/icons8-linked-in_roekvc.webp",
-                "url": "https://www.linkedin.com/in/jesus-maria-clemente-garcia/"
-            },
-            {
-                "title": "GitHub",
-                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692936232/JC%20DEV/icons/icons8-github_ktwfzx.webp",
-                "url": "https://github.com/jcdev92"
-            }
-        ],
-        "Projects": [
-            {
-                "title": "JC DEV Portfolio",
-                "description": "It's my personal protfolio, a full stack web app, it has backend, a CMS panel made by myself and his respective frontend.",
-                "image": "https://res.cloudinary.com/dwhztsc8v/image/upload/f_auto,q_auto/v1/JC%20DEV/projects/xfanextbrqnv8pj2rbla",
-                "url": "https://jcdev-portfolio-bootstrap.vercel.app/",
-                "github": "https://github.com/jcdev92/JCDEV_BOOTSRAP",
-                "ProjectsSkills": [
-                    {
-
-                        "Skill": {
-                            "title": "Node JS",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687659259/JC%20DEV/icons/icons8-node-js-48_e3cyck.png"
+{
+    "message": "All users",
+    "data": [
+        {
+            "id": "14867cfc-4b7b-4c55-bf53-ba7b821c8ef9",
+            "firstName": "Jesus Maria",
+            "lastName": "Clemente Garcia",
+            "email": "jcdeveloper92@gmail.com",
+            "phone": "+584120799500",
+            "birthDay": "1992-06-16T00:00:00.000Z",
+            "gender": "male",
+            "country": "Venezuela",
+            "profileImg": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687545529/JC%20DEV/profile/frontal_cortada_kldz0g.webp",
+            "jobTitle": "Full Stack Developer",
+            "aboutMe": "I'm  a Full Stack Web Developer with passion for creating beautiful and functional websites and apps. I have a background in Bussines Management at the University of Carabobo and Full Stack Web Development at Academlo.com. I'm currently looking for a backend or frontend developer job.",
+            "biography": "My interest in computers began when I was around 15 years old, when I taught myself how to repair computers. Then years later I studied business administration at university, with the dream of creating my own IT company. However, it was only after different jobs, years later, that I discovered the fascinating world of code on the Internet.  To have a solid foundation, I studied the fundamentals of programming at Platzi Academy. Next, I enrolled in Academlo, an invaluable opportunity to learn more about web development. At Academlo, I developed applications with JavaScript-HTML CSS, REACT & NODE JS, such as an online store, Poke-App, CRUD users App, and several dynamic websites. Now, I want to use my skills to help others achieve their aspirations.",
+            "bioImage": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687545518/JC%20DEV/profile/perfil_frontal_orig-removebg-preview_oxasfp.png",
+            "role": "admin",
+            "Skills": [
+                {
+                    "id": "9c0165f0-8ef6-4de3-b9cd-3504c498d4f6",
+                    "title": "Tailwind CSS",
+                    "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687717714/JC%20DEV/icons/TAILWIND_eix6j4.webp"
+                },
+                {
+                    "id": "5bcecea0-bdd6-4f10-9d13-59c27f2d7573",
+                    "title": "Express JS",
+                    "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687717401/JC%20DEV/icons/icons8-express-js_fagkcg.webp"
+                },
+                {
+                    "id": "18079356-d226-42b7-910b-62faeba458eb",
+                    "title": "JavaScript",
+                    "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547037/JC%20DEV/icons/javascript_pqswtn.svg"
+                },
+                {
+                    "id": "d4f1b1f2-ff8a-48ef-b7b7-0877702403ca",
+                    "title": "HTML5",
+                    "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692936206/JC%20DEV/icons/icons8-html_tuqyba.webp"
+                },
+                {
+                    "id": "a5775872-c8b2-433b-8695-d905a32bfecf",
+                    "title": "CSS",
+                    "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692936206/JC%20DEV/icons/icons8-css_q4xxed.webp"
+                },
+                {
+                    "id": "7d39e4fb-fc6f-42ae-823c-dd15e233e801",
+                    "title": "React JS",
+                    "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547034/JC%20DEV/icons/react_x2zum8.svg"
+                },
+                {
+                    "id": "c33fca63-07c5-41de-a9a5-d6e2192defa0",
+                    "title": "Python",
+                    "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547034/JC%20DEV/icons/python_wlee9b.svg"
+                },
+                {
+                    "id": "a2a8ce3f-cc13-40d0-9a4c-0d6d260484b1",
+                    "title": "PostgreSQL",
+                    "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1688328791/JC%20DEV/icons/postgresql_logo_icon_170835_dqszmu.webp"
+                },
+                {
+                    "id": "d61cea9b-46d9-4b22-bb13-ea8e008d35f0",
+                    "title": "Sequelize",
+                    "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1688327803/JC%20DEV/icons/sequelize_original_logo_icon_146348_ijbt8k.webp"
+                },
+                {
+                    "id": "6ef1b0fa-95c3-4794-99d1-8ad58384aa0c",
+                    "title": "Node JS",
+                    "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687659259/JC%20DEV/icons/icons8-node-js-48_e3cyck.png"
+                }
+            ],
+            "SocialMedia": [
+                {
+                    "id": "5ea88155-b2c9-4d9d-adea-1d99128b60ff",
+                    "title": "LinkedIn",
+                    "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692936232/JC%20DEV/icons/icons8-linked-in_roekvc.webp",
+                    "url": "https://www.linkedin.com/in/jesus-maria-clemente-garcia/"
+                },
+                {
+                    "id": "0f46184e-7f2d-41a1-84b3-20f1fac917a1",
+                    "title": "GitHub",
+                    "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692936232/JC%20DEV/icons/icons8-github_ktwfzx.webp",
+                    "url": "https://github.com/jcdev92"
+                }
+            ],
+            "Projects": [
+                {
+                    "id": "8f3c5fbe-33d4-43ec-8ced-de4ac1a4bd27",
+                    "title": "JC DEV Portfolio",
+                    "description": "It's my personal protfolio, a full stack web app, it has backend, a CMS panel made by myself and his respective frontend.",
+                    "image": "https://res.cloudinary.com/dwhztsc8v/image/upload/f_auto,q_auto/v1/JC%20DEV/projects/xfanextbrqnv8pj2rbla",
+                    "url": "https://jcdev-portfolio-bootstrap.vercel.app/",
+                    "github": "https://github.com/jcdev92/JCDEV_BOOTSRAP",
+                    "ProjectsSkills": [
+                        {
+                            "id": "61d6a221-2995-4975-ab44-16247602ad8e",
+                            "Skill": {
+                                "id": "6ef1b0fa-95c3-4794-99d1-8ad58384aa0c",
+                                "title": "Node JS",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687659259/JC%20DEV/icons/icons8-node-js-48_e3cyck.png"
+                            }
+                        },
+                        {
+                            "id": "c3d7dc8a-4464-45f0-a4c9-9b92192cba4c",
+                            "Skill": {
+                                "id": "a2a8ce3f-cc13-40d0-9a4c-0d6d260484b1",
+                                "title": "PostgreSQL",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1688328791/JC%20DEV/icons/postgresql_logo_icon_170835_dqszmu.webp"
+                            }
+                        },
+                        {
+                            "id": "4228780f-2602-400f-9dee-6322cce56510",
+                            "Skill": {
+                                "id": "7d39e4fb-fc6f-42ae-823c-dd15e233e801",
+                                "title": "React JS",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547034/JC%20DEV/icons/react_x2zum8.svg"
+                            }
+                        },
+                        {
+                            "id": "d7728d7c-aa29-4d1c-8051-46d0c784b82e",
+                            "Skill": {
+                                "id": "d61cea9b-46d9-4b22-bb13-ea8e008d35f0",
+                                "title": "Sequelize",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1688327803/JC%20DEV/icons/sequelize_original_logo_icon_146348_ijbt8k.webp"
+                            }
+                        },
+                        {
+                            "id": "7e293c34-a620-4009-9c58-3a07348b391c",
+                            "Skill": {
+                                "id": "18079356-d226-42b7-910b-62faeba458eb",
+                                "title": "JavaScript",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547037/JC%20DEV/icons/javascript_pqswtn.svg"
+                            }
+                        },
+                        {
+                            "id": "f3d5a630-f331-472c-b325-c4dae5cd7519",
+                            "Skill": {
+                                "id": "5bcecea0-bdd6-4f10-9d13-59c27f2d7573",
+                                "title": "Express JS",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687717401/JC%20DEV/icons/icons8-express-js_fagkcg.webp"
+                            }
+                        },
+                        {
+                            "id": "88b16adb-15f2-4f84-820c-6e3fed897805",
+                            "Skill": {
+                                "id": "9c0165f0-8ef6-4de3-b9cd-3504c498d4f6",
+                                "title": "Tailwind CSS",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687717714/JC%20DEV/icons/TAILWIND_eix6j4.webp"
+                            }
                         }
-                    },
-                    {
-
-                        "Skill": {
-                            "title": "PostgreSQL",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1688328791/JC%20DEV/icons/postgresql_logo_icon_170835_dqszmu.webp"
+                    ]
+                },
+                {
+                    "id": "7f664b93-474f-4ac9-aaa0-cd2d64bdb176",
+                    "title": "RECIPES API",
+                    "description": "A REST FULL API FOR RECIPES, WAS MADE WITH EXPRESS JS, SEQUELIZE & POSGRES SQL, USING PASSPORT AND JWT FOR THE AUTHORIZATION AND AUTHENTICATION",
+                    "image": "https://res.cloudinary.com/dwhztsc8v/image/upload/f_auto,q_auto/v1/JC%20DEV/projects/xtnxiwpcinxrngpe93wr",
+                    "url": "https://github.com/jcdev92/food_recipes_api",
+                    "github": "https://github.com/jcdev92/food_recipes_api",
+                    "ProjectsSkills": [
+                        {
+                            "id": "494e39eb-e3dc-4558-a816-eaca269a59d9",
+                            "Skill": {
+                                "id": "6ef1b0fa-95c3-4794-99d1-8ad58384aa0c",
+                                "title": "Node JS",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687659259/JC%20DEV/icons/icons8-node-js-48_e3cyck.png"
+                            }
+                        },
+                        {
+                            "id": "ae78a938-a8ad-4704-97f8-ea649897cde2",
+                            "Skill": {
+                                "id": "d61cea9b-46d9-4b22-bb13-ea8e008d35f0",
+                                "title": "Sequelize",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1688327803/JC%20DEV/icons/sequelize_original_logo_icon_146348_ijbt8k.webp"
+                            }
+                        },
+                        {
+                            "id": "e3c1899e-2759-4f73-ab94-c048a7d220a2",
+                            "Skill": {
+                                "id": "a2a8ce3f-cc13-40d0-9a4c-0d6d260484b1",
+                                "title": "PostgreSQL",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1688328791/JC%20DEV/icons/postgresql_logo_icon_170835_dqszmu.webp"
+                            }
+                        },
+                        {
+                            "id": "62a8e048-d0a5-4231-849b-56337dae9f01",
+                            "Skill": {
+                                "id": "18079356-d226-42b7-910b-62faeba458eb",
+                                "title": "JavaScript",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547037/JC%20DEV/icons/javascript_pqswtn.svg"
+                            }
+                        },
+                        {
+                            "id": "ded57ed2-39b4-4b05-84cd-55baf26eeeeb",
+                            "Skill": {
+                                "id": "5bcecea0-bdd6-4f10-9d13-59c27f2d7573",
+                                "title": "Express JS",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687717401/JC%20DEV/icons/icons8-express-js_fagkcg.webp"
+                            }
                         }
-                    },
-                    {
-                        "Skill": {
-    
-                            "title": "React JS",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547034/JC%20DEV/icons/react_x2zum8.svg"
+                    ]
+                },
+                {
+                    "id": "8c6d9cdb-eca2-4f16-b04e-0fd7ef652a0e",
+                    "title": "POKEDEX",
+                    "description": "It's a kind of pokedex, where you can find any Pokemon of all generations, you can see them in cards and know about their abilities, natures, and much more...  This project was made for the development of frontend skills with React JS.",
+                    "image": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692228102/JC%20DEV/projects/pokedexapppokedex_ixk5as.png",
+                    "url": "https://vercel.com/jcdev92/poke-api/6AXJUgqTYrWsSAjQvs3PSR29GdKx",
+                    "github": "https://github.com/jcdev92/Pokedex-App",
+                    "ProjectsSkills": [
+                        {
+                            "id": "d63ca431-fadd-485c-bedf-52a87752289c",
+                            "Skill": {
+                                "id": "d4f1b1f2-ff8a-48ef-b7b7-0877702403ca",
+                                "title": "HTML5",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692936206/JC%20DEV/icons/icons8-html_tuqyba.webp"
+                            }
+                        },
+                        {
+                            "id": "4d185622-f531-4ff6-823c-d3a36a388b15",
+                            "Skill": {
+                                "id": "7d39e4fb-fc6f-42ae-823c-dd15e233e801",
+                                "title": "React JS",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547034/JC%20DEV/icons/react_x2zum8.svg"
+                            }
+                        },
+                        {
+                            "id": "679a53e6-9947-4083-a5e4-02723377ac2d",
+                            "Skill": {
+                                "id": "a5775872-c8b2-433b-8695-d905a32bfecf",
+                                "title": "CSS",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692936206/JC%20DEV/icons/icons8-css_q4xxed.webp"
+                            }
+                        },
+                        {
+                            "id": "8578fd49-a39f-44fe-977e-a9cef579d783",
+                            "Skill": {
+                                "id": "18079356-d226-42b7-910b-62faeba458eb",
+                                "title": "JavaScript",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547037/JC%20DEV/icons/javascript_pqswtn.svg"
+                            }
                         }
-                    },
-                    {
-                        "Skill": {
-    
-                            "title": "Sequelize",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1688327803/JC%20DEV/icons/sequelize_original_logo_icon_146348_ijbt8k.webp"
+                    ]
+                },
+                {
+                    "id": "e11600f2-f5d5-4a6a-84ae-61cab95bb360",
+                    "title": "RICK & MORTY WIKI",
+                    "description": "It's a frontend project where you can consult and see info about locations and characters from the Rick and Morty TV Show",
+                    "image": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692228103/JC%20DEV/projects/rick_mortyapp1_acr7cp.png",
+                    "url": "https://rick-and-morty-jcdev.netlify.app/",
+                    "github": "https://github.com/jcdev92/rick-and-morty",
+                    "ProjectsSkills": [
+                        {
+                            "id": "db00b577-d22c-4982-bfaa-df1d644834c8",
+                            "Skill": {
+                                "id": "7d39e4fb-fc6f-42ae-823c-dd15e233e801",
+                                "title": "React JS",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547034/JC%20DEV/icons/react_x2zum8.svg"
+                            }
+                        },
+                        {
+                            "id": "f297a65c-d5b9-4290-9435-31de61fd1e3e",
+                            "Skill": {
+                                "id": "d4f1b1f2-ff8a-48ef-b7b7-0877702403ca",
+                                "title": "HTML5",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692936206/JC%20DEV/icons/icons8-html_tuqyba.webp"
+                            }
+                        },
+                        {
+                            "id": "5b7f9b21-06bc-483b-92c8-1e9512b64b32",
+                            "Skill": {
+                                "id": "a5775872-c8b2-433b-8695-d905a32bfecf",
+                                "title": "CSS",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692936206/JC%20DEV/icons/icons8-css_q4xxed.webp"
+                            }
+                        },
+                        {
+                            "id": "396c309b-9326-4b64-bf73-6878ea1d9aa2",
+                            "Skill": {
+                                "id": "18079356-d226-42b7-910b-62faeba458eb",
+                                "title": "JavaScript",
+                                "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547037/JC%20DEV/icons/javascript_pqswtn.svg"
+                            }
                         }
-                    },
-                    {
-                        "Skill": {        
-                            "title": "JavaScript",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547037/JC%20DEV/icons/javascript_pqswtn.svg"
-                        }
-                    },
-                    {
-                        "Skill": {        
-                            "title": "Express JS",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687717401/JC%20DEV/icons/icons8-express-js_fagkcg.webp"
-                        }
-                    },
-                    {
-                        "Skill": {        
-                            "title": "Tailwind CSS",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687717714/JC%20DEV/icons/TAILWIND_eix6j4.webp"
-                        }
-                    }
-                ]
-            },
-            {
-                "title": "RECIPES API",
-                "description": "A REST FULL API FOR RECIPES, WAS MADE WITH EXPRESS JS, SEQUELIZE & POSGRES SQL, USING PASSPORT AND JWT FOR THE AUTHORIZATION AND AUTHENTICATION",
-                "image": "https://res.cloudinary.com/dwhztsc8v/image/upload/f_auto,q_auto/v1/JC%20DEV/projects/xtnxiwpcinxrngpe93wr",
-                "url": "https://github.com/jcdev92/food_recipes_api",
-                "github": "https://github.com/jcdev92/food_recipes_api",
-                "ProjectsSkills": [
-                    {
-                        "Skill": {        
-                            "title": "Node JS",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687659259/JC%20DEV/icons/icons8-node-js-48_e3cyck.png"
-                        }
-                    },
-                    {
-                        "Skill": {        
-                            "title": "Sequelize",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1688327803/JC%20DEV/icons/sequelize_original_logo_icon_146348_ijbt8k.webp"
-                        }
-                    },
-                    {
-                        "Skill": {        
-                            "title": "PostgreSQL",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1688328791/JC%20DEV/icons/postgresql_logo_icon_170835_dqszmu.webp"
-                        }
-                    },
-                    {
-                        "Skill": {        
-                            "title": "JavaScript",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547037/JC%20DEV/icons/javascript_pqswtn.svg"
-                        }
-                    },
-                    {
-                        "Skill": {        
-                            "title": "Express JS",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687717401/JC%20DEV/icons/icons8-express-js_fagkcg.webp"
-                        }
-                    }
-                ]
-            },
-            {
-                "title": "POKEDEX",
-                "description": "It's a kind of pokedex, where you can find any Pokemon of all generations, you can see them in cards and know about their abilities, natures, and much more...  This project was made for the development of frontend skills with React JS.",
-                "image": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692228102/JC%20DEV/projects/pokedexapppokedex_ixk5as.png",
-                "url": "https://vercel.com/jcdev92/poke-api/6AXJUgqTYrWsSAjQvs3PSR29GdKx",
-                "github": "https://github.com/jcdev92/Pokedex-App",
-                "ProjectsSkills": [
-                    {
-                        "Skill": {
-                            "title": "HTML5",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692936206/JC%20DEV/icons/icons8-html_tuqyba.webp"
-                        }
-                    },
-                    {    
-                        "Skill": {        
-                            "title": "React JS",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547034/JC%20DEV/icons/react_x2zum8.svg"
-                        }
-                    },
-                    {    
-                        "Skill": {        
-                            "title": "CSS",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692936206/JC%20DEV/icons/icons8-css_q4xxed.webp"
-                        }
-                    },
-                    {
-
-                        "Skill": {        
-                            "title": "JavaScript",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547037/JC%20DEV/icons/javascript_pqswtn.svg"
-                        }
-                    }
-                ]
-            },
-            {
-                "title": "RICK & MORTY WIKI",
-                "description": "It's a frontend project where you can consult and see info about locations and characters from the Rick and Morty TV Show",
-                "image": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692228103/JC%20DEV/projects/rick_mortyapp1_acr7cp.png",
-                "url": "https://rick-and-morty-jcdev.netlify.app/",
-                "github": "https://github.com/jcdev92/rick-and-morty",
-                "ProjectsSkills": [
-                    {    
-                        "Skill": {        
-                            "title": "React JS",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547034/JC%20DEV/icons/react_x2zum8.svg"
-                        }
-                    },
-                    {    
-                        "Skill": {        
-                            "title": "HTML5",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692936206/JC%20DEV/icons/icons8-html_tuqyba.webp"
-                        }
-                    },
-                    {    
-                        "Skill": {        
-                            "title": "CSS",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1692936206/JC%20DEV/icons/icons8-css_q4xxed.webp"
-                        }
-                    },
-                    {
-
-                        "Skill": {        
-                            "title": "JavaScript",
-                            "icon": "https://res.cloudinary.com/dwhztsc8v/image/upload/v1687547037/JC%20DEV/icons/javascript_pqswtn.svg"
-                        }
-                    }
-                ]
-            }
-        ]
-    }
-]
+                    ]
+                }
+            ]
+        }
+    ]
+}
