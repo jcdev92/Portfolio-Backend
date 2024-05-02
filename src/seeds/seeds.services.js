@@ -1,6 +1,6 @@
-const { seedDatabase, seedRelateProjectSkills } = require("./seeds.controller");
+const { seedDatabase } = require("./seeds.controller");
 
-const seed = (req, res) => {
+const seedData = (req, res) => {
     seedDatabase()
     .then((data) => {
       res.status(200).json({
@@ -13,4 +13,4 @@ const seed = (req, res) => {
     });
 };
 
-module.exports = { seed };
+module.exports = { seedData };

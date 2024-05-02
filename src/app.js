@@ -26,7 +26,9 @@ app.use("/api/v1/social-media", socialMediaRouter);
 app.use("/api/v1/project", projectRouter);
 app.use("/api/v1/category", categoryRouter);
 app.use("/api/v1/post", postRouter);
-app.use("/api/v1/seed", seedRouter);
+
+// Development Routes
+// app.use("/api/v1/seed", seedRouter);
 
 database
   .authenticate()
