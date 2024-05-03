@@ -1,10 +1,10 @@
 require("dotenv").config();
 
 // prod url
-// const url = process.env.URL_PROD;
+const url = process.env.URL_PROD;
 
 // dev url
-const url = process.env.URL_PROD;
+// const url = process.env.URL_DEV;
 
 const config = {
   url,
