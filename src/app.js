@@ -22,12 +22,12 @@ app.use(express.json());
 
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/auth", authRouter);
-app.use("/api/v1/skill", skillRouter);
+app.use("/api/v1/skills", skillRouter);
 app.use("/api/v1/social-media", socialMediaRouter);
-app.use("/api/v1/project", projectRouter);
-app.use("/api/v1/category", categoryRouter);
-app.use("/api/v1/post", postRouter);
-app.use("/api/v1/message", messageRouter);
+app.use("/api/v1/projects", projectRouter);
+app.use("/api/v1/categories", categoryRouter);
+app.use("/api/v1/posts", postRouter);
+app.use("/api/v1/messages", messageRouter);
 
 // Development Routes
 // app.use("/api/v1/seed", seedRouter);
